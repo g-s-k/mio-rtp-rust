@@ -14,6 +14,13 @@ fn main() {
     let mio_host_address = &args[2];
     let mio_port = &args[3].parse::<u16>().unwrap();
     let own_port = &args[4].parse::<u16>().unwrap();
-    // temp: print them (TODO: actually do something with them)
+    // temp: print them
     println!("{} {} {} {}", alsa_client_name, mio_host_address, mio_port, own_port);
+
+    // TODO: start driver daemon
+    // TODO: create sockets for control and data ports
+    // TODO: bind sockets to local ports
+    // TODO: create addresses for remote partner (interface)
+    // TODO: invite on each port
+    // TODO: init rtpMIDI header and send to interface
 }
