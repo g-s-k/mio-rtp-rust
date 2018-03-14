@@ -1,0 +1,6 @@
+[package]
+name = "mio"
+version = "0.1.0"
+authors = ["George Kaplan <george@georgekaplan.xyz>"]
+
+[dependencies]
