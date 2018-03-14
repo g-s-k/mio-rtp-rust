@@ -1,3 +1,5 @@
+mod rtp_const;
+
 use std::env;
 use std::process;
 
@@ -6,7 +8,7 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     // check that all are present
     if args.len() != 5 {
-        println!("usage: mio <alsa client name> <mio host address> <mio port> <local port>");
+        println!("{}", rtp_const::ERRMSG);
         process::exit(1);
     }
     // give the arguments clearly named identifiers
